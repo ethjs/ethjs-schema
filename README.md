@@ -65,7 +65,7 @@ The entire spec is contained in the [schema.json](src/schema.json) file.
   ```
   {
     methods: {
-      "eth_getBalance": [["DATA20", "QUANTITY|TAG"], "QUANTITY", 1, 2],
+      "eth_getBalance": [["D20", "Q|T"], "Q", 1, 2],
       ...
     },
     ...
@@ -74,14 +74,16 @@ The entire spec is contained in the [schema.json](src/schema.json) file.
 
 ### Primitives:
 
-  - "DATA" : bytes data
-  - "DATA20" : bytes data, length 20
-  - "DATA32" : bytes data, length 32
-  - "Boolean" : boolean true or false
-  - "String" : string data
+  - "D" : bytes data
+  - "D20" : bytes data, length 20
+  - "D32" : bytes data, length 32
+  - "B" : boolean true or false
+  - "S" : string data
   - "Array|DATA" : either an array of DATA or a single bytes DATA
-  - "QUANTITY" : a number quantity
-  - "QUANTITY|TAG" : a number quantity or a tag (e.g. 'latest', 'earliest' ...)
+  - "Q" : a number quantity
+  - "Q|T" : a number quantity or a tag (e.g. 'latest', 'earliest' ...)
+
+Note, post version 0.1.1 value primitives have been compressed.
 
 ### Tags:
 
@@ -116,13 +118,13 @@ The `__required` property is added to specify which properties of the object mus
     "objects": {
       "SendTransaction": {
         "__required": ["from", "data"],
-        "from": "DATA20",
-        "to": "DATA20",
-        "gas": "QUANTITY",
-        "gasPrice": "QUANTITY",
-        "value": "QUANTITY",
-        "data": "DATA",
-        "nonce": "QUANTITY"
+        "from": "D20",
+        "to": "D20",
+        "gas": "Q",
+        "gasPrice": "Q",
+        "value": "Q",
+        "data": "D",
+        "nonce": "Q"
       },
       ...
     }

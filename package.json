@@ -1,9 +1,8 @@
 {
   "name": "ethjs-schema",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A complete Ethereum RPC specification as a JSON object export.",
   "main": "src/schema.json",
-  "browser": "dist/ethjs-schema.json",
   "files": [
     "dist",
     "src"
