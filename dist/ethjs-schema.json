@@ -72,13 +72,13 @@
       "highestBlock": "Q"
     },
     "SendTransaction": {
-      "__required": ["from", "D"],
+      "__required": ["from", "data"],
       "from": "D20",
       "to": "D20",
       "gas": "Q",
       "gasPrice": "Q",
       "value": "Q",
-      "D": "D",
+      "data": "D",
       "nonce": "Q"
     },
     "EstimateTransaction": {
@@ -88,7 +88,7 @@
       "gas": "Q",
       "gasPrice": "Q",
       "value": "Q",
-      "D": "D",
+      "data": "D",
       "nonce": "Q"
     },
     "CallTransaction": {
@@ -98,7 +98,7 @@
       "gas": "Q",
       "gasPrice": "Q",
       "value": "Q",
-      "D": "D",
+      "data": "D",
       "nonce": "Q"
     },
     "Block": {
@@ -164,7 +164,7 @@
       "blockHash": "D32",
       "blockNumber": "Q",
       "address": "D20",
-      "D": "Array|DATA",
+      "data": "Array|DATA",
       "topics": ["D"]
     },
     "SHHPost": {

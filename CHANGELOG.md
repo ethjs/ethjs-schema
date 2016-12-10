@@ -1,3 +1,7 @@
+# 0.1.3 -- data tag fix
+
+1. Data tag fix
+
 # 0.1.2 -- value compression
 
 1. Breaking changes
