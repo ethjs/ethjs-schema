@@ -111,7 +111,7 @@
       "logsBloom": "D",
       "transactionsRoot": "D",
       "stateRoot": "D",
-      "receiptRoot": "D",
+      "receiptsRoot": "D",
       "miner": "D",
       "difficulty": "Q",
       "totalDifficulty": "Q",
