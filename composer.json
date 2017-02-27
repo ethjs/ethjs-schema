@@ -1,6 +1,6 @@
 {
   "name": "digitaldonkey/ethjs-schema",
-  "description": "Schema file for Ethereum JSON RPC API. See: https://github.com/ethereum/wiki/wiki/JSON-RPC"
+  "description": "Schema file for Ethereum JSON RPC API. See: https://github.com/ethereum/wiki/wiki/JSON-RPC",
   "license": "MIT",
   "authors": [
     {
