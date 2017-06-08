@@ -5,7 +5,7 @@
     "net_version": [[], "S"],
     "net_peerCount": [[], "Q"],
     "net_listening": [[], "B"],
-    "personal_sign": [["D20", "D", "S"], "D", 2],
+    "personal_sign": [["D", "D20", "S"], "D", 2],
     "personal_ecRecover": [["D", "D"], "D20", 2],
     "eth_protocolVersion": [[], "S"],
     "eth_syncing": [[], "Boolean|EthSyncing"],
