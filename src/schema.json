@@ -1,6 +1,6 @@
 {
-  "primitives": ["D", "D8", "D20", "D32", "D60", "D256", "B", "S", "Q", "T"],
-  "combinations": ["Array|D", "B|EthSyncing", "D32|Transaction", "Q|T"],
+  "primitives": ["D", "D8", "D20", "D32", "D60", "D256", "B", "S", "Q", "T", "Array|D"],
+  "combinations": ["B|EthSyncing", "D32|Transaction", "Q|T"],
   "tags": ["latest", "earliest", "pending"],
   "methods": {
     "web3_clientVersion":                       [[], "S"],
