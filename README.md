@@ -56,7 +56,7 @@ The entire spec is contained in the [schema.json](src/schema.json) file.
 
   ```
   methods: {
-    <method name : [ Array Input(s), Array Output(s), String Output type, Integer Minimum required parameters, Boolean Requires default block parameter] >,
+    <method name : [ Array Input(s), Array Output(s), Integer - Minimum required parameters, Boolean - Requires default block parameter]>,
   }
   ```
 
@@ -75,13 +75,22 @@ The entire spec is contained in the [schema.json](src/schema.json) file.
 ### Primitives:
 
   - "D" : bytes data
+  - "D8" : bytes data, length 8
   - "D20" : bytes data, length 20
   - "D32" : bytes data, length 32
+  - "D60" : bytes data, length 60
+  - "D256" : bytes data, length 256
   - "B" : boolean true or false
   - "S" : string data
-  - "Array|DATA" : either an array of DATA or a single bytes DATA
   - "Q" : a number quantity
-  - "Q|T" : a number quantity or a tag (e.g. 'latest', 'earliest' ...)
+  - "T" : a block tag (e.g. 'latest', 'earliest' ...)
+  - "Array|DATA" : either an array of DATA or a single bytes DATA
+
+### Combinations:
+
+  - "B|EthSyncing" : boolean or EthSyncing object
+  - "D32|Transaction" : 32-byte transaction hash or Transaction object
+  - "Q|T" : number quantity or block tag
 
 Note, post version 0.1.1 value primitives have been compressed.
 
