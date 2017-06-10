@@ -60,7 +60,7 @@
     "shh_post":                                 [["SHHPost"], "B", 1],
     "shh_version":                              [[], "S"],
     "shh_newIdentity":                          [[], "D60"],
-    "shh_hasIdentity":                          [["D60"], "B"],
+    "shh_hasIdentity":                          [["D60"], "B", 1],
     "shh_newGroup":                             [[], "D60"],
     "shh_addToGroup":                           [["D60"], "B", 1],
     "shh_newFilter":                            [["SHHFilter"], "Q", 1],
