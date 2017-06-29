@@ -56,7 +56,7 @@ The entire spec is contained in the [schema.json](src/schema.json) file.
 
   ```
   methods: {
-    <method name : [ input(s), output(s), minimum required outputs, 'latest' tag default position (if any) ] >,
+    <method name : [ Array Input(s), Array Output(s), String Output type, Integer Minimum required parameters, Boolean Requires default block parameter] >,
   }
   ```
 
@@ -65,7 +65,7 @@ The entire spec is contained in the [schema.json](src/schema.json) file.
   ```
   {
     methods: {
-      "eth_getBalance": [["D20", "Q|T"], "Q", 1, 2],
+      "eth_getBalance": [["D20", "Q|T"], "Q", 1, true],
       ...
     },
     ...

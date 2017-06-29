@@ -1,0 +1,15 @@
+{
+  "name": "digitaldonkey/ethjs-schema",
+  "description": "Schema file for Ethereum JSON RPC API. See: https://github.com/ethereum/wiki/wiki/JSON-RPC",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nick Dodson",
+      "email": "nick.dodson@consensys.net"
+    },
+    {
+      "name": "Thorsten Krug",
+      "email": "thorsten.krug@consensys.net"
+    }
+  ]
+}
