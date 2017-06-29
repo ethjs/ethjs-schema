@@ -2,11 +2,12 @@
   "methods": {
     "web3_clientVersion": [[], "S"],
     "web3_sha3": [["S"], "D", 1],
+    "ecrecover": [["D32","Q","D32","D32"], "D20", 4],
     "net_version": [[], "S"],
     "net_peerCount": [[], "Q"],
     "net_listening": [[], "B"],
     "personal_sign": [["D20", "D", "S"], "D", 2],
-    "personal_ecRecover": [["D", "D"], "D20", 2],    
+    "personal_ecRecover": [["D", "D"], "D20", 2],
     "eth_protocolVersion": [[], "S"],
     "eth_syncing": [[], "Boolean|EthSyncing"],
     "eth_coinbase": [[], "D20"],
