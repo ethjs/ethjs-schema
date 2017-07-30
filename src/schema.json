@@ -154,7 +154,7 @@
       "__required": [],
       "fromBlock": "Q|T",
       "toBlock": "Q|T",
-      "address": "Array|DATA",
+      "address": "D20",
       "topics": ["D"]
     },
     "FilterChange": {
