@@ -24,7 +24,7 @@
     "eth_getUncleCountByBlockNumber": [["Q"], "Q", 1],
     "eth_getCode": [["D20", "Q|T"], "D", 1, 2],
     "eth_sign": [["D20", "D32"], "D", 2],
-    "eth_signTypedData": ["D32", "D", 1],
+    "eth_signTypedData": [["Array|DATA", "D20"], "D", 1],
     "eth_sendTransaction": [["SendTransaction"], "D", 1],
     "eth_sendRawTransaction": [["D"], "D32", 1],
     "eth_call": [["CallTransaction", "Q|T"], "D", 1, 2],
