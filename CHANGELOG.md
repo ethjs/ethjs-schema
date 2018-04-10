@@ -1,3 +1,7 @@
+# 0.2.1 -- frontal padding
+
+1. Added frontal padding for eth filter ID's.
+
 # 0.1.4 -- receiptsRoot fix
 
 1. Fixed Block `receiptsRoot` property (was `receiptRoot`)
