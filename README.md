@@ -81,7 +81,7 @@ The entire spec is contained in the [schema.json](src/schema.json) file.
   - "S" : string data
   - "Array|DATA" : either an array of DATA or a single bytes DATA
   - "Q" : a number quantity
-  - "QP" : a number quantity (with frontal padding for single digit numbers)
+  - "QP" : a number quantity (with frontal padding)
   - "Q|T" : a number quantity or a tag (e.g. 'latest', 'earliest' ...)
 
 Note, post version 0.1.1 value primitives have been compressed.
