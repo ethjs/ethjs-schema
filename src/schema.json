@@ -29,6 +29,7 @@
     "eth_sendRawTransaction": [["D"], "D32", 1],
     "eth_call": [["CallTransaction", "Q|T"], "D", 1, 2],
     "eth_estimateGas": [["EstimateTransaction", "Q|T"], "Q", 1],
+    "eth_createAccessList": [["EstimateTransaction", "Q|T"], "Q", 1],
     "eth_getBlockByHash": [["D32", "B"], "Block", 2],
     "eth_getBlockByNumber": [["Q|T", "B"], "Block", 2],
     "eth_getTransactionByHash": [["D32"], "Transaction", 1],
@@ -74,6 +75,17 @@
       "currentBlock": "Q",
       "highestBlock": "Q"
     },
+    "createAccessList": {
+      "_required": [],
+      "accessList": ["AccessList"],
+      "error": ["S"],
+      "gasUsed": "Q"
+    },
+    "AccessList": {
+      "_required": [],
+      "address": "D20",
+      "storageKeys": ["D32"]
+    },
     "SendTransaction": {
       "__required": ["from", "data"],
       "from": "D20",
@@ -82,7 +94,8 @@
       "gasPrice": "Q",
       "value": "Q",
       "data": "D",
-      "nonce": "Q"
+      "nonce": "Q",
+      "accessList": ["AccessList"]
     },
     "EstimateTransaction": {
       "__required": [],
@@ -92,7 +105,8 @@
       "gasPrice": "Q",
       "value": "Q",
       "data": "D",
-      "nonce": "Q"
+      "nonce": "Q",
+      "accessList": ["AccessList"]
     },
     "CallTransaction": {
       "__required": ["to"],
@@ -102,7 +116,8 @@
       "gasPrice": "Q",
       "value": "Q",
       "data": "D",
-      "nonce": "Q"
+      "nonce": "Q",
+      "accessList": ["AccessList"]
     },
     "Block": {
       "__required": [],
@@ -138,7 +153,8 @@
       "value": "Q",
       "gasPrice": "Q",
       "gas": "Q",
-      "input": "D"
+      "input": "D",
+      "accessList": ["AccessList"]
     },
     "Receipt": {
       "__required": [],
