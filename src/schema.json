@@ -76,11 +76,13 @@
       "highestBlock": "Q"
     },
     "createAccessList": {
+      "_required": [],
       "accessList": ["AccessList"],
       "error": ["S"],
       "gasUsed": "Q"
     },
     "AccessList": {
+      "_required": [],
       "address": "D20",
       "storageKeys": ["D32"]
     },
